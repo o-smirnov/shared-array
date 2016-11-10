@@ -52,6 +52,14 @@ static PyMethodDef module_functions[] = {
 	  METH_VARARGS,
 	  "List all existing numpy arrays from shared memory" },
 
+  { "lock", (PyCFunction) shared_array_lock,
+    METH_VARARGS,
+    "Lock an array into memory with mlock(2)" },
+
+  { "unlock", (PyCFunction) shared_array_unlock,
+    METH_VARARGS,
+    "Unlock an array in memory with munlock(2)" },
+
 	{ NULL, NULL, 0, NULL }
 };
 

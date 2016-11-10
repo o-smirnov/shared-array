@@ -27,7 +27,7 @@ def read(fname):
     return open(path.join(here, fname)).read()
 
 setup(name    = 'SharedArray',
-      version = '1.0',
+      version = '1.1',
 
       # Description
       description      = 'Share numpy arrays between processes',
