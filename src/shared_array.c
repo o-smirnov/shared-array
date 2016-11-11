@@ -52,11 +52,11 @@ static PyMethodDef module_functions[] = {
 	  METH_VARARGS,
 	  "List all existing numpy arrays from shared memory" },
 
-  { "lock", (PyCFunction) shared_array_lock,
+  { "lock", (PyCFunction) shared_array_mlock,
     METH_VARARGS,
     "Lock an array into memory with mlock(2)" },
 
-  { "unlock", (PyCFunction) shared_array_unlock,
+  { "unlock", (PyCFunction) shared_array_munlock,
     METH_VARARGS,
     "Unlock an array in memory with munlock(2)" },
 

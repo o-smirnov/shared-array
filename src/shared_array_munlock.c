@@ -41,9 +41,9 @@ static PyObject *do_munlock(PyArrayObject *array)
 
 
 /*
- * Method: SharedArray.mlock()
+ * Method: SharedArray.munlock()
  */
-PyObject *shared_array_unlock(PyObject *self, PyObject *args)
+PyObject *shared_array_munlock(PyObject *self, PyObject *args)
 {
 	PyArrayObject *array;
 
